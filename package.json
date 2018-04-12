@@ -1,0 +1,17 @@
+{
+  "name": "idle-dark-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Uses the general syntax colors of the IDLE IDE that comes bundled with Python, but puts it on an easier-on-the-eyes dark background.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "python",
+    "idle"
+  ],
+  "repository": "https://github.com/atom/idle-dark-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
