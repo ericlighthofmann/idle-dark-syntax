@@ -1,95 +1,95 @@
 @import "syntax-variables";
 
-atom-text-editor, :host {
+atom-text-editor,atom-text-editor {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
 }
 
-atom-text-editor .gutter, :host .gutter {
+atom-text-editor .gutter,atom-text-editor .gutter {
   background-color: @syntax-gutter-background-color;
   color: @syntax-gutter-text-color;
 }
 
-atom-text-editor .gutter .line-number.cursor-line, :host .gutter .line-number.cursor-line {
+atom-text-editor .gutter .line-number.cursor-line,atom-text-editor .gutter .line-number.cursor-line {
   background-color: @syntax-gutter-background-color-selected;
   color: @syntax-gutter-text-color-selected;
 }
 
-atom-text-editor .gutter .line-number.cursor-line-no-selection, :host .gutter .line-number.cursor-line-no-selection {
+atom-text-editor .gutter .line-number.cursor-line-no-selection,atom-text-editor .gutter .line-number.cursor-line-no-selection {
   color: @syntax-gutter-text-color-selected;
 }
 
-atom-text-editor .wrap-guide, :host .wrap-guide {
+atom-text-editor .wrap-guide,atom-text-editor .wrap-guide {
   color: @syntax-wrap-guide-color;
 }
 
-atom-text-editor .indent-guide, :host .indent-guide {
+atom-text-editor .indent-guide,atom-text-editor .indent-guide {
   color: @syntax-indent-guide-color;
 }
 
-atom-text-editor .invisible-character, :host .invisible-character {
+atom-text-editor .invisible-character,atom-text-editor .invisible-character {
   color: @syntax-invisible-character-color;
 }
 
-atom-text-editor .search-results .marker .region, :host .search-results .marker .region {
+atom-text-editor .search-results .syntax--marker .region,atom-text-editor .search-results .syntax--marker .region {
   background-color: transparent;
   border: @syntax-result-marker-color;
 }
 
-atom-text-editor .search-results .marker.current-result .region, :host .search-results .marker.current-result .region {
+atom-text-editor .search-results .syntax--marker.current-result .region,atom-text-editor .search-results .syntax--marker.current-result .region {
   border: @syntax-result-marker-color-selected;
 }
 
-atom-text-editor.is-focused .cursor, :host(.is-focused) .cursor {
+atom-text-editor.is-focused .cursor,atom-text-editor .cursor {
   border-color: @syntax-cursor-color;
 }
 
-atom-text-editor.is-focused .selection .region, :host(.is-focused) .selection .region {
+atom-text-editor.is-focused .selection .region,atom-text-editor .selection .region {
   background-color: @syntax-selection-color;
 }
 
-atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line, :host(.is-focused) .line-number.cursor-line-no-selection, :host(.is-focused) .line.cursor-line {
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line,atom-text-editor .line-number.cursor-line-no-selection,atom-text-editor .line.cursor-line {
   background-color: rgba(0, 0, 0, 0.07);
 }
 
-.comment {
+.syntax--comment {
   color: #FF2626;
 }
 
-.string {
+.syntax--string {
   color: #82D182;
 }
 
 .constant.numeric {
 }
 
-.constant.language {
+.syntax--constant.syntax--language {
   color: #FFA150;
 }
 
 .constant.character, .constant.other {
 }
 
-.variable.language, .variable.other {
+.syntax--variable.syntax--language, .syntax--variable.syntax--other {
   color: #E5E5E5;
 }
 
-.keyword {
+.syntax--keyword {
   color: #FFA150;
 }
 
-.storage {
+.syntax--storage {
   color: #FFA150;
 }
 
-.entity.name.type {
+.syntax--entity.syntax--name.syntax--type {
   color: #7C98EC;
 }
 
 .entity.other.inherited-class {
 }
 
-.entity.name.function {
+.syntax--entity.syntax--name.syntax--function {
   color: #7C98EC;
 }
 
@@ -102,27 +102,27 @@ atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-edi
 .entity.other.attribute-name {
 }
 
-.support.function {
+.syntax--support.syntax--function {
   color: #7C98EC;
 }
 
-.support.constant {
+.syntax--support.syntax--constant {
   color: #E5E5E5;
 }
 
-.support.type, .support.class {
+.syntax--support.syntax--type, .syntax--support.syntax--class {
   color: #E5E5E5;
 }
 
-.support.variable {
+.syntax--support.syntax--variable {
   color: #E5E5E5;
 }
 
-.invalid {
+.syntax--invalid {
   color: #E5E5E5;
   background-color: #990000;
 }
 
-.constant.other.placeholder.py {
+.syntax--constant.syntax--other.syntax--placeholder.py {
   color: #990000;
 }
